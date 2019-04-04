@@ -121,12 +121,15 @@
 
 function alleleFormatter(data) {
   if (data.length>10){
-    return data.substring(0,3) + "..." + data.substring(data.length-3,data.length);
+    rst = data.substring(0,3) + "..." + data.substring(data.length-3,data.length);
+  }else{
+    rst = data;
   }
+  return rst;
 }
 
 
-  
+
 $('#table').bootstrapTable({
   pagination:true,
   search:true,
