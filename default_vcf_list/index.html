@@ -118,10 +118,18 @@
 <!--export--><script src="https://unpkg.com/bootstrap-table@1.14.2/dist/extensions/export/bootstrap-table-export.min.js"></script>
 <!--sticky--><script src="https://unpkg.com/bootstrap-table@1.14.2/dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js"></script>
 <script>
+
+function alleleFormatter(data) {
+  if (data.length>10){
+    return data.substring(0,3) + "..." + data.substring(data.length-3,data.length);
+  }
+}
+
+
+  
 $('#table').bootstrapTable({
   pagination:true,
   search:true,
-  showRefresh:true,
   showColumns:true,
   stickyHeader: true,
   theadClasses: 'thead-dark',
