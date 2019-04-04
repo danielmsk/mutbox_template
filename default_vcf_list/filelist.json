@@ -1,7 +1,7 @@
 {
 	"template_name":"default_vcf_list",
 	"filelist":[
-		{"filepath":"index.html", "type":"variant_list"}
+		{"filepath":"index.html", "type":"variant_list"},
 		{"filepath":"css/main.css", "type":""}
 	]
 }
