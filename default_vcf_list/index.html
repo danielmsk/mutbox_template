@@ -40,7 +40,7 @@ $('#table').bootstrapTable({
   stickyHeader: true,
   theadClasses: 'thead-dark',
   columns: [{{TABLE_HEADER}}],
-  data: [{{VARIANT_LIST}}]
+  data: [{{VARIANT_LIST|convert_variant_list_to_boostraptable}}]
 })
 
 </script>
