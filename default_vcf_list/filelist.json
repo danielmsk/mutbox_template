@@ -2,6 +2,7 @@
 	"template_name":"default_vcf_list",
 	"filelist":[
 		{"filepath":"index.html", "type":"variant_list", "render":true},
-		{"filepath":"base.html", "type":"", "render":false}
+		{"filepath":"base.html", "type":"", "render":false},
+		{"filepath":"filter.py", "type":"filter", "render":false}
 	]
 }

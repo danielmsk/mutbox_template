@@ -1,6 +1,5 @@
 {% extends "base.html" %}
 
-
 {% block content %}
 <div class="container">
    <table id="table" 
@@ -39,8 +38,8 @@ $('#table').bootstrapTable({
   showColumns:true,
   stickyHeader: true,
   theadClasses: 'thead-dark',
-  columns: [{{TABLE_HEADER}}],
-  data: [{{VARIANT_LIST|convert_variant_list_to_boostraptable}}]
+  columns: [{{TABLE_HEADER|get_variant_bootstraptable_column|safe}}],
+  data: [{{VARIANT_LIST|convert_variant_list_to_bootstraptable|safe}}]
 })
 
 </script>
